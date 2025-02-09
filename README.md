@@ -10,6 +10,5 @@ How to Play?
 Languages used:
 HTML, CSS, Javascript
 
-URL to play: file:///Users/nhihoang/Documents/hackathon%20game/hackathongame.html
 <img width="1455" alt="Screenshot 2025-02-08 at 11 15 34 PM" src="https://github.com/user-attachments/assets/28fc4762-4a10-442a-af55-13d8513c113a" />
 
