@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 2em;
+    margin-top: 20px;
+    color:#333;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.cat {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('jumpy\ cat-1.png.png');
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('killer\ bread-1.png.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform:scaleX(-1);
+    animation: moveObstacle 2s linear infinite;
+}
+
+.gif-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gif-container-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gif-container-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.gif-container-top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.side-gif{
+    width: 300px;
+    height: auto;
+}
+@keyframes moveObstacle {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
